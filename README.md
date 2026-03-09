@@ -141,7 +141,7 @@ function BotRating({ attributes }) {
 
 ## Documentation
 
-- **Website**: https://pslbot.github.io/psl-for-bots/
+- **Website**: https://pslbot.fun
 - **API Docs**: [docs/api.md](docs/api.md)
 - **Methodology**: [research/research/methodology.md](research/research/methodology.md)
 - **Whitepaper**: [research/papers/the-psl-whitepaper.md](research/papers/the-psl-whitepaper.md)
