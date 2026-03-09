@@ -1,0 +1,864 @@
+/* ============================================
+   PSL Bot - Brutalist Cyberpunk Theme
+   ============================================ */
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', 'Courier', monospace;
+  background: #2b2b2b;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+a {
+  color: #d4f04d;
+  text-decoration: none;
+  border-bottom: 1px solid #d4f04d;
+}
+
+a:hover {
+  background: #d4f04d;
+  color: #2b2b2b;
+}
+
+strong {
+  color: #d4f04d;
+  font-weight: bold;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #d4f04d;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 30px 0 20px 0;
+  color: #d4f04d;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-top: 25px;
+  margin-bottom: 12px;
+  color: #3d9b8d;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+/* ============================================
+   LAYOUT COMPONENTS
+   ============================================ */
+
+/* Logo Header */
+.logo-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.logo-header img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.site-title {
+  color: #d4f04d;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Navigation */
+nav {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #3d9b8d;
+}
+
+nav a {
+  margin: 0 5px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #c0c0c0;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 2px solid #3d9b8d;
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+
+/* ============================================
+   CODE BLOCKS
+   ============================================ */
+
+pre {
+  background: #1a1a1a;
+  padding: 15px;
+  overflow-x: auto;
+  margin: 15px 0;
+  border: 2px solid #3d9b8d;
+}
+
+code {
+  font-family: 'Courier New', 'Courier', monospace;
+  color: #d4f04d;
+}
+
+/* ============================================
+   INDEX PAGE - SECTION BOXES
+   ============================================ */
+
+.section-box {
+  background: #3a3a3a;
+  border: 2px solid #3d9b8d;
+  padding: 30px;
+  margin: 30px 0;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d4f04d;
+  margin-bottom: 20px;
+  text-transform: lowercase;
+  border-bottom: 1px solid #3d9b8d;
+  padding-bottom: 10px;
+}
+
+.intro-section {
+  background: #3a3a3a;
+  border: 2px solid #3d9b8d;
+  padding: 25px;
+  margin: 30px 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ============================================
+   INDEX PAGE - FEATURE GRID
+   ============================================ */
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.feature-box {
+  background: #2b2b2b;
+  border: 2px solid #3d9b8d;
+  padding: 20px;
+  min-height: 100px;
+}
+
+.feature-title {
+  font-weight: bold;
+  color: #d4f04d;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.feature-text {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #c0c0c0;
+}
+
+/* ============================================
+   INDEX PAGE - METRICS GRID
+   ============================================ */
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.metric-box {
+  background: #2b2b2b;
+  border: 2px solid #3d9b8d;
+  padding: 20px;
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d4f04d;
+  margin-bottom: 8px;
+}
+
+.metric-label {
+  font-size: 12px;
+  color: #888;
+}
+
+/* ============================================
+   INDEX PAGE - PHILOSOPHY BOX
+   ============================================ */
+
+.philosophy-box {
+  background: #3a3a3a;
+  border: 2px solid #3d9b8d;
+  padding: 25px;
+  margin: 30px 0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* ============================================
+   INDEX PAGE - DIMENSIONS & PACKAGES
+   ============================================ */
+
+.dimension {
+  margin: 20px 0;
+  padding: 15px;
+  border: 2px solid #3d9b8d;
+  background: rgba(61, 155, 141, 0.1);
+}
+
+.dimension-header {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.dimension-weight {
+  color: #d4f04d;
+  font-size: 12px;
+}
+
+.package-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.package-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #3d9b8d;
+}
+
+.package-list li:last-child {
+  border-bottom: none;
+}
+
+/* ============================================
+   RATINGS PAGE - CALCULATOR LAYOUT
+   ============================================ */
+
+.calculator {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.inputs {
+  background: #3a3a3a;
+  border: 2px solid #3d9b8d;
+  padding: 40px;
+}
+
+.dimension-section {
+  margin-bottom: 40px;
+}
+
+.dimension-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #d4f04d;
+  font-weight: bold;
+}
+
+.dimension-desc {
+  color: #c0c0c0;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+/* ============================================
+   RATINGS PAGE - INPUT CONTROLS
+   ============================================ */
+
+.input-group {
+  margin-bottom: 24px;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.input-row label {
+  flex: 1;
+  font-weight: normal;
+  color: #e0e0e0;
+}
+
+.input-row input[type="range"] {
+  flex: 2;
+  height: 6px;
+  background: #1a1a1a;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #3d9b8d;
+}
+
+.input-row input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #d4f04d;
+  cursor: pointer;
+}
+
+.input-row input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #d4f04d;
+  cursor: pointer;
+  border: none;
+}
+
+.input-row input[type="number"] {
+  width: 80px;
+  padding: 8px 12px;
+  border: 2px solid #3d9b8d;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.input-row .value-display {
+  width: 48px;
+  text-align: center;
+  font-weight: bold;
+  color: #d4f04d;
+  font-size: 1rem;
+}
+
+/* ============================================
+   RATINGS PAGE - RESULTS PANEL
+   ============================================ */
+
+.results {
+  position: sticky;
+  top: 100px;
+  background: #3a3a3a;
+  border: 2px solid #3d9b8d;
+  padding: 40px;
+  height: fit-content;
+}
+
+.psl-display {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.psl-score-circle {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 20px;
+  border: 3px solid #3d9b8d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.psl-score-inner {
+  width: 150px;
+  height: 150px;
+  background: #2b2b2b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.psl-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d4f04d;
+}
+
+.psl-classification {
+  font-size: 0.9rem;
+  color: #3d9b8d;
+  margin-top: 8px;
+}
+
+.percentile-badge {
+  display: inline-block;
+  padding: 8px 16px;
+  background: transparent;
+  border: 2px solid #3d9b8d;
+  color: #3d9b8d;
+  font-weight: normal;
+  margin-top: 12px;
+}
+
+/* ============================================
+   RATINGS PAGE - DIMENSION BARS
+   ============================================ */
+
+.dimension-bars {
+  margin-top: 32px;
+}
+
+.bar-item {
+  margin-bottom: 20px;
+}
+
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.bar-name {
+  font-weight: normal;
+  color: #e0e0e0;
+}
+
+.bar-value {
+  font-weight: bold;
+  color: #d4f04d;
+}
+
+.bar-track {
+  height: 8px;
+  background: #1a1a1a;
+  border: 1px solid #3d9b8d;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #3d9b8d;
+  transition: width 0.3s;
+}
+
+/* ============================================
+   COMPARISON PAGE
+   ============================================ */
+
+.selector {
+  background: #3a3a3a;
+  border: 2px solid #3d9b8d;
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+.selector-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: 'Courier New', monospace;
+  border: 2px solid #3d9b8d;
+  background: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.vs-badge {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d4f04d;
+}
+
+.bot-card {
+  background: #3a3a3a;
+  border: 2px solid #3d9b8d;
+  padding: 30px;
+}
+
+.bot-card h2 {
+  margin-bottom: 20px;
+  color: #d4f04d;
+  font-size: 1.2rem;
+}
+
+.bot-card > div > div {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+.classification {
+  color: #3d9b8d;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.mogging-section {
+  grid-column: 1 / -1;
+  background: #3a3a3a;
+  border: 2px solid #3d9b8d;
+  padding: 40px;
+  text-align: center;
+}
+
+.mogging-coefficient {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #d4f04d;
+}
+
+.mogging-class {
+  font-size: 1.2rem;
+  color: #3d9b8d;
+  margin-bottom: 16px;
+}
+
+.mogging-desc {
+  color: #c0c0c0;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   ABOUT PAGE
+   ============================================ */
+
+.content {
+  background: #3a3a3a;
+  border: 2px solid #3d9b8d;
+  padding: 40px;
+}
+
+.formula {
+  background: #1a1a1a;
+  padding: 15px;
+  font-family: monospace;
+  margin: 15px 0;
+  border: 1px solid #3d9b8d;
+  color: #d4f04d;
+}
+
+.mapping-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+  font-size: 0.85rem;
+}
+
+.mapping-item {
+  background: #2b2b2b;
+  padding: 10px;
+  border: 1px solid #3d9b8d;
+}
+
+.correlation {
+  color: #3d9b8d;
+  font-weight: bold;
+}
+
+.disclaimer {
+  background: #3a3a3a;
+  border: 2px solid #d4f04d;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+ul {
+  margin: 15px 0 15px 30px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* ============================================
+   DOCS PAGE
+   ============================================ */
+
+header {
+  background: #2b2b2b;
+  border-bottom: 2px solid #3d9b8d;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+  border-bottom: none;
+}
+
+.docs-container {
+  max-width: 1400px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+}
+
+.sidebar {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+  background: #3a3a3a;
+  border: 2px solid #3d9b8d;
+  padding: 1.5rem;
+}
+
+.sidebar h3 {
+  margin-bottom: 1rem;
+  color: #d4f04d;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar a {
+  color: #3d9b8d;
+  text-decoration: none;
+  font-size: 0.95rem;
+  border-bottom: 1px solid transparent;
+}
+
+.sidebar a:hover {
+  color: #d4f04d;
+  border-bottom: 1px solid #d4f04d;
+  background: none;
+}
+
+.sidebar .nested {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content h2 {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 1rem;
+  padding-top: 2rem;
+  border-top: 2px solid #3d9b8d;
+}
+
+.content h2:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 1rem;
+}
+
+.content h3 {
+  font-size: 1.2rem;
+  margin: 2rem 0 1rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.content code {
+  background: #1a1a1a;
+  padding: 0.2rem 0.4rem;
+  border: 1px solid #3d9b8d;
+  font-size: 0.9rem;
+}
+
+.content pre {
+  background: #1a1a1a;
+  color: #e0e0e0;
+  padding: 1.5rem;
+  border: 2px solid #3d9b8d;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.content pre code {
+  background: none;
+  color: #e0e0e0;
+  padding: 0;
+  border: none;
+}
+
+.api-method {
+  background: #2b2b2b;
+  border: 2px solid #3d9b8d;
+  border-left: 4px solid #d4f04d;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.api-method h4 {
+  color: #d4f04d;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.api-method .signature {
+  background: #1a1a1a;
+  color: #d4f04d;
+  padding: 0.75rem;
+  border: 1px solid #3d9b8d;
+  font-family: 'Courier New', monospace;
+  margin: 0.75rem 0;
+  font-size: 0.85rem;
+}
+
+.api-method .params {
+  margin-top: 1rem;
+}
+
+.api-method .param {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.api-method .param code {
+  font-weight: 600;
+  color: #3d9b8d;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.badge-primary {
+  border-color: #3d9b8d;
+  color: #3d9b8d;
+  background: transparent;
+}
+
+.badge-success {
+  border-color: #d4f04d;
+  color: #d4f04d;
+  background: transparent;
+}
+
+.note {
+  background: #2b2b2b;
+  border: 2px solid #d4f04d;
+  border-left: 4px solid #d4f04d;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.note strong {
+  color: #d4f04d;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .calculator {
+    grid-template-columns: 1fr;
+  }
+  
+  .results {
+    position: static;
+  }
+
+  .docs-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .selector-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vs-badge {
+    text-align: center;
+  }
+}

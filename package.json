@@ -1,0 +1,39 @@
+{
+  "name": "psl-bot",
+  "version": "1.0.0",
+  "description": "Objective bot superiority assessment through PSL rating",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "dev": "pnpm -r dev",
+    "clean": "pnpm -r clean"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "tsup": "^8.0.0"
+  },
+  "keywords": [
+    "psl",
+    "bot",
+    "rating",
+    "quality",
+    "assessment",
+    "looksmaxxing"
+  ],
+  "homepage": "https://github.com/pslbot/psl-for-bots",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pslbot/psl-for-bots"
+  },
+  "license": "MIT"
+}

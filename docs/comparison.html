@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bot Comparison - PSL Bot</title>
+  <meta name="description" content="Compare two bots head-to-head with PSL analysis">
+  <link rel="stylesheet" href="styles.css">
+</head>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo Header -->
+    <div class="logo-header">
+      <img src="psl.png" alt="PSL Bot Logo">
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="index.html">Home</a> / 
+      <a href="ratings.html">Calculator</a> / 
+      <a href="comparison.html">Compare</a> / 
+      <a href="about.html">Methodology</a> / 
+      <a href="docs.html">Docs</a>
+    </nav>
+
+    <div class="header">
+      <h1>⚔️ Bot Comparison</h1>
+      <p>Head-to-head PSL analysis with mogging coefficient calculation</p>
+    </div>
+      <div class="selector">
+        <div class="selector-grid">
+          <div>
+            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Select Bot A</label>
+            <select id="botA" onchange="compare()">
+              <option value="react">React (9.7)</option>
+              <option value="vite">Vite (8.9)</option>
+              <option value="express">Express (7.7)</option>
+              <option value="lodash">Lodash (7.9)</option>
+              <option value="webpack">Webpack (6.5)</option>
+            </select>
+          </div>
+          <div class="vs-badge">VS</div>
+          <div>
+            <label style="display: block; margin-bottom: 8px; font-weight: 600;">Select Bot B</label>
+            <select id="botB" onchange="compare()">
+              <option value="react">React (9.7)</option>
+              <option value="vite">Vite (8.9)</option>
+              <option value="express" selected>Express (7.7)</option>
+              <option value="lodash">Lodash (7.9)</option>
+              <option value="webpack">Webpack (6.5)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="results" id="results"></div>
+    </div>
+  </div>
+
+  <script>
+    const BOTS = {
+      react: { name: 'React', psl: 9.7, as: 9.5, fp: 9.8, hc: 9.8, mp: 9.8, sp: 9.3 },
+      vite: { name: 'Vite', psl: 8.9, as: 9.0, fp: 9.3, hc: 9.0, mp: 8.8, sp: 8.8 },
+      express: { name: 'Express', psl: 7.7, as: 7.8, fp: 7.8, hc: 7.3, mp: 8.5, sp: 7.3 },
+      lodash: { name: 'Lodash', psl: 7.9, as: 8.5, fp: 7.5, hc: 8.5, mp: 7.8, sp: 7.5 },
+      webpack: { name: 'Webpack', psl: 6.5, as: 6.3, fp: 6.5, hc: 6.5, mp: 7.5, sp: 6.3 }
+    };
+
+    function classify(psl) {
+      if (psl >= 9.0) return 'Legendary (Gigachad)';
+      if (psl >= 8.0) return 'Exceptional (Chad)';
+      if (psl >= 7.0) return 'Above Average (HTN)';
+      if (psl >= 6.0) return 'Average (Normie)';
+      if (psl >= 5.0) return 'Below Average (LTN)';
+      if (psl >= 3.0) return 'Poor (Subhuman)';
+      return 'Terminal (Truecel)';
+    }
+
+    function getColor(psl) {
+      if (psl >= 9.0) return '#27ae60';
+      if (psl >= 8.0) return '#2ecc71';
+      if (psl >= 7.0) return '#3498db';
+      if (psl >= 6.0) return '#95a5a6';
+      if (psl >= 5.0) return '#f39c12';
+      return '#e74c3c';
+    }
+
+    function compare() {
+      const botAKey = document.getElementById('botA').value;
+      const botBKey = document.getElementById('botB').value;
+      const botA = BOTS[botAKey];
+      const botB = BOTS[botBKey];
+
+      const diff = botA.psl - botB.psl;
+      const visibilityA = (botA.mp / 10) * (1 + botA.fp / 10);
+      const mogging = diff * visibilityA * 100;
+
+      let moggingClass, moggingColor;
+      if (Math.abs(mogging) > 200) { moggingClass = 'Nuclear Mogging'; moggingColor = '#27ae60'; }
+      else if (Math.abs(mogging) > 100) { moggingClass = 'Brutal Mogging'; moggingColor = '#2ecc71'; }
+      else if (Math.abs(mogging) > 50) { moggingClass = 'Absolute Mogging'; moggingColor = '#3498db'; }
+      else if (Math.abs(mogging) > 20) { moggingClass = 'Significant Mogging'; moggingColor = '#95a5a6'; }
+      else if (Math.abs(mogging) > 5) { moggingClass = 'Marginal Mogging'; moggingColor = '#f39c12'; }
+      else { moggingClass = 'Looksmatch'; moggingColor = '#95a5a6'; }
+
+      const resultHTML = `
+        <div class="bot-card">
+          <h2>${botA.name}</h2>
+          <div class="psl-display">
+            <div class="psl-number" style="color: ${getColor(botA.psl)}">${botA.psl}</div>
+            <div class="classification">${classify(botA.psl)}</div>
+          </div>
+          <div>
+            <div style="margin-bottom: 12px;">
+              <span style="font-weight: 600;">Architectural Symmetry:</span> ${botA.as}
+            </div>
+            <div style="margin-bottom: 12px;">
+              <span style="font-weight: 600;">Feature Prominence:</span> ${botA.fp}
+            </div>
+            <div style="margin-bottom: 12px;">
+              <span style="font-weight: 600;">Harmonic Cohesion:</span> ${botA.hc}
+            </div>
+            <div style="margin-bottom: 12px;">
+              <span style="font-weight: 600;">Market Presence:</span> ${botA.mp}
+            </div>
+            <div style="margin-bottom: 12px;">
+              <span style="font-weight: 600;">Scalability Potential:</span> ${botA.sp}
+            </div>
+          </div>
+        </div>
+
+        <div class="bot-card">
+          <h2>${botB.name}</h2>
+          <div class="psl-display">
+            <div class="psl-number" style="color: ${getColor(botB.psl)}">${botB.psl}</div>
+            <div class="classification">${classify(botB.psl)}</div>
+          </div>
+          <div>
+            <div style="margin-bottom: 12px;">
+              <span style="font-weight: 600;">Architectural Symmetry:</span> ${botB.as}
+            </div>
+            <div style="margin-bottom: 12px;">
+              <span style="font-weight: 600;">Feature Prominence:</span> ${botB.fp}
+            </div>
+            <div style="margin-bottom: 12px;">
+              <span style="font-weight: 600;">Harmonic Cohesion:</span> ${botB.hc}
+            </div>
+            <div style="margin-bottom: 12px;">
+              <span style="font-weight: 600;">Market Presence:</span> ${botB.mp}
+            </div>
+            <div style="margin-bottom: 12px;">
+              <span style="font-weight: 600;">Scalability Potential:</span> ${botB.sp}
+            </div>
+          </div>
+        </div>
+
+        <div class="mogging-section">
+          <div class="mogging-coefficient" style="color: ${moggingColor}">
+            μ = ${mogging.toFixed(0)}
+          </div>
+          <div class="mogging-class">${moggingClass}</div>
+          <div class="mogging-desc">
+            ${mogging > 0 ? botA.name : botB.name} ${Math.abs(mogging) > 5 ? 'mogs' : 'is roughly equal to'} ${mogging > 0 ? botB.name : botA.name}
+            ${Math.abs(mogging) > 100 ? ' with overwhelming superiority.' : Math.abs(mogging) > 50 ? ' decisively.' : Math.abs(mogging) > 5 ? '.' : ' - they are looksmatches.'}
+          </div>
+        </div>
+      `;
+
+      document.getElementById('results').innerHTML = resultHTML;
+    }
+
+    compare();
+  </script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+{
+  "bots": [
+    {
+      "id": "react",
+      "name": "React",
+      "description": "A JavaScript library for building user interfaces",
+      "category": "UI Framework",
+      "psl": 9.7,
+      "classification": "Legendary (Gigachad)",
+      "percentile": 99,
+      "dimensions": {
+        "architecturalSymmetry": 9.5,
+        "featureProminence": 9.8,
+        "harmonicCohesion": 9.8,
+        "marketPresence": 9.8,
+        "scalabilityPotential": 9.3
+      },
+      "attributes": {
+        "packageSymmetry": 9,
+        "apiConsistency": 10,
+        "namingUniformity": 9,
+        "hierarchyBalance": 10,
+        "functionalDistinctiveness": 10,
+        "uspStrength": 10,
+        "discoverability": 10,
+        "marketingClarity": 9,
+        "apiCohesion": 10,
+        "typeConsistency": 10,
+        "errorHandling": 9,
+        "documentation": 10,
+        "githubStars": 223000,
+        "npmDownloads": 20000000,
+        "communityScore": 10,
+        "docsSiteScore": 10,
+        "horizontalScaling": 9,
+        "performance": 10,
+        "extensibility": 10,
+        "technicalDebt": 2
+      },
+      "metadata": {
+        "githubUrl": "https://github.com/facebook/react",
+        "npmUrl": "https://npmjs.com/package/react",
+        "docsUrl": "https://react.dev",
+        "version": "18.2.0",
+        "lastUpdated": "2024-03-01"
+      }
+    },
+    {
+      "id": "vite",
+      "name": "Vite",
+      "description": "Next generation frontend tooling",
+      "category": "Build Tool",
+      "psl": 8.9,
+      "classification": "Exceptional (Chad)",
+      "percentile": 95,
+      "dimensions": {
+        "architecturalSymmetry": 9.0,
+        "featureProminence": 9.3,
+        "harmonicCohesion": 9.0,
+        "marketPresence": 8.8,
+        "scalabilityPotential": 8.8
+      },
+      "attributes": {
+        "packageSymmetry": 9,
+        "apiConsistency": 9,
+        "namingUniformity": 9,
+        "hierarchyBalance": 9,
+        "functionalDistinctiveness": 9,
+        "uspStrength": 10,
+        "discoverability": 9,
+        "marketingClarity": 9,
+        "apiCohesion": 9,
+        "typeConsistency": 9,
+        "errorHandling": 9,
+        "documentation": 9,
+        "githubStars": 64000,
+        "npmDownloads": 9000000,
+        "communityScore": 9,
+        "docsSiteScore": 9,
+        "horizontalScaling": 8,
+        "performance": 10,
+        "extensibility": 9,
+        "technicalDebt": 2
+      },
+      "metadata": {
+        "githubUrl": "https://github.com/vitejs/vite",
+        "npmUrl": "https://npmjs.com/package/vite",
+        "docsUrl": "https://vitejs.dev"
+      }
+    },
+    {
+      "id": "lodash",
+      "name": "Lodash",
+      "description": "A modern JavaScript utility library",
+      "category": "Utility Library",
+      "psl": 7.9,
+      "classification": "Exceptional (Chad)",
+      "percentile": 85,
+      "dimensions": {
+        "architecturalSymmetry": 8.5,
+        "featureProminence": 7.5,
+        "harmonicCohesion": 8.5,
+        "marketPresence": 7.8,
+        "scalabilityPotential": 7.5
+      },
+      "attributes": {
+        "packageSymmetry": 9,
+        "apiConsistency": 9,
+        "namingUniformity": 8,
+        "hierarchyBalance": 8,
+        "functionalDistinctiveness": 7,
+        "uspStrength": 8,
+        "discoverability": 8,
+        "marketingClarity": 7,
+        "apiCohesion": 9,
+        "typeConsistency": 8,
+        "errorHandling": 8,
+        "documentation": 9,
+        "githubStars": 58000,
+        "npmDownloads": 50000000,
+        "communityScore": 8,
+        "docsSiteScore": 7,
+        "horizontalScaling": 8,
+        "performance": 7,
+        "extensibility": 7,
+        "technicalDebt": 3
+      }
+    },
+    {
+      "id": "express",
+      "name": "Express",
+      "description": "Fast, unopinionated, minimalist web framework for Node.js",
+      "category": "Server Framework",
+      "psl": 7.7,
+      "classification": "Above Average (HTN)",
+      "percentile": 75,
+      "dimensions": {
+        "architecturalSymmetry": 7.8,
+        "featureProminence": 7.8,
+        "harmonicCohesion": 7.3,
+        "marketPresence": 8.5,
+        "scalabilityPotential": 7.3
+      },
+      "attributes": {
+        "packageSymmetry": 8,
+        "apiConsistency": 8,
+        "namingUniformity": 7,
+        "hierarchyBalance": 8,
+        "functionalDistinctiveness": 7,
+        "uspStrength": 8,
+        "discoverability": 9,
+        "marketingClarity": 8,
+        "apiCohesion": 8,
+        "typeConsistency": 6,
+        "errorHandling": 7,
+        "documentation": 8,
+        "githubStars": 63000,
+        "npmDownloads": 25000000,
+        "communityScore": 9,
+        "docsSiteScore": 8,
+        "horizontalScaling": 7,
+        "performance": 7,
+        "extensibility": 8,
+        "technicalDebt": 5
+      }
+    },
+    {
+      "id": "webpack",
+      "name": "Webpack",
+      "description": "A static module bundler for modern JavaScript applications",
+      "category": "Build Tool",
+      "psl": 6.5,
+      "classification": "Average (Normie)",
+      "percentile": 45,
+      "dimensions": {
+        "architecturalSymmetry": 6.3,
+        "featureProminence": 6.5,
+        "harmonicCohesion": 6.5,
+        "marketPresence": 7.5,
+        "scalabilityPotential": 6.3
+      },
+      "attributes": {
+        "packageSymmetry": 6,
+        "apiConsistency": 7,
+        "namingUniformity": 6,
+        "hierarchyBalance": 6,
+        "functionalDistinctiveness": 7,
+        "uspStrength": 6,
+        "discoverability": 6,
+        "marketingClarity": 6,
+        "apiCohesion": 6,
+        "typeConsistency": 6,
+        "errorHandling": 7,
+        "documentation": 7,
+        "githubStars": 64000,
+        "npmDownloads": 30000000,
+        "communityScore": 8,
+        "docsSiteScore": 7,
+        "horizontalScaling": 7,
+        "performance": 5,
+        "extensibility": 7,
+        "technicalDebt": 7
+      }
+    },
+    {
+      "id": "vue",
+      "name": "Vue",
+      "description": "The progressive JavaScript framework",
+      "category": "UI Framework",
+      "psl": 7.8,
+      "classification": "Above Average (HTN)",
+      "percentile": 80,
+      "dimensions": {
+        "architecturalSymmetry": 8.0,
+        "featureProminence": 8.0,
+        "harmonicCohesion": 8.3,
+        "marketPresence": 7.3,
+        "scalabilityPotential": 7.5
+      }
+    },
+    {
+      "id": "fastify",
+      "name": "Fastify",
+      "description": "Fast and low overhead web framework for Node.js",
+      "category": "Server Framework",
+      "psl": 7.9,
+      "classification": "Exceptional (Chad)",
+      "percentile": 85,
+      "dimensions": {
+        "architecturalSymmetry": 8.5,
+        "featureProminence": 8.0,
+        "harmonicCohesion": 8.0,
+        "marketPresence": 7.3,
+        "scalabilityPotential": 8.3
+      }
+    },
+    {
+      "id": "svelte",
+      "name": "Svelte",
+      "description": "Cybernetically enhanced web apps",
+      "category": "UI Framework",
+      "psl": 7.6,
+      "classification": "Above Average (HTN)",
+      "percentile": 72,
+      "dimensions": {
+        "architecturalSymmetry": 8.0,
+        "featureProminence": 8.5,
+        "harmonicCohesion": 7.8,
+        "marketPresence": 6.8,
+        "scalabilityPotential": 7.5
+      }
+    },
+    {
+      "id": "angular",
+      "name": "Angular",
+      "description": "Platform for building mobile and desktop web applications",
+      "category": "UI Framework",
+      "psl": 6.9,
+      "classification": "Average (Normie)",
+      "percentile": 52,
+      "dimensions": {
+        "architecturalSymmetry": 7.5,
+        "featureProminence": 6.5,
+        "harmonicCohesion": 7.0,
+        "marketPresence": 7.0,
+        "scalabilityPotential": 6.8
+      }
+    },
+    {
+      "id": "redux",
+      "name": "Redux",
+      "description": "Predictable state container for JavaScript apps",
+      "category": "State Management",
+      "psl": 7.1,
+      "classification": "Above Average (HTN)",
+      "percentile": 62,
+      "dimensions": {
+        "architecturalSymmetry": 7.5,
+        "featureProminence": 7.0,
+        "harmonicCohesion": 7.8,
+        "marketPresence": 6.8,
+        "scalabilityPotential": 6.5
+      }
+    },
+    {
+      "id": "zustand",
+      "name": "Zustand",
+      "description": "A small, fast and scalable bearbones state management solution",
+      "category": "State Management",
+      "psl": 7.6,
+      "classification": "Above Average (HTN)",
+      "percentile": 72,
+      "dimensions": {
+        "architecturalSymmetry": 8.0,
+        "featureProminence": 8.0,
+        "harmonicCohesion": 7.8,
+        "marketPresence": 6.8,
+        "scalabilityPotential": 7.5
+      }
+    },
+    {
+      "id": "vitest",
+      "name": "Vitest",
+      "description": "A blazing fast unit test framework powered by Vite",
+      "category": "Testing",
+      "psl": 8.1,
+      "classification": "Exceptional (Chad)",
+      "percentile": 88,
+      "dimensions": {
+        "architecturalSymmetry": 8.5,
+        "featureProminence": 8.5,
+        "harmonicCohesion": 8.3,
+        "marketPresence": 7.5,
+        "scalabilityPotential": 8.0
+      }
+    },
+    {
+      "id": "date-fns",
+      "name": "date-fns",
+      "description": "Modern JavaScript date utility library",
+      "category": "Utility Library",
+      "psl": 7.2,
+      "classification": "Above Average (HTN)",
+      "percentile": 65,
+      "dimensions": {
+        "architecturalSymmetry": 7.8,
+        "featureProminence": 7.0,
+        "harmonicCohesion": 7.5,
+        "marketPresence": 6.8,
+        "scalabilityPotential": 7.0
+      }
+    },
+    {
+      "id": "hono",
+      "name": "Hono",
+      "description": "Ultrafast web framework for the Edges",
+      "category": "Server Framework",
+      "psl": 7.5,
+      "classification": "Above Average (HTN)",
+      "percentile": 70,
+      "dimensions": {
+        "architecturalSymmetry": 8.0,
+        "featureProminence": 8.0,
+        "harmonicCohesion": 7.5,
+        "marketPresence": 6.5,
+        "scalabilityPotential": 8.0
+      }
+    },
+    {
+      "id": "moment",
+      "name": "Moment.js",
+      "description": "Parse, validate, manipulate, and display dates (DEPRECATED)",
+      "category": "Utility Library",
+      "psl": 4.5,
+      "classification": "Poor (Subhuman)",
+      "percentile": 12,
+      "dimensions": {
+        "architecturalSymmetry": 5.0,
+        "featureProminence": 4.5,
+        "harmonicCohesion": 5.0,
+        "marketPresence": 5.5,
+        "scalabilityPotential": 3.0
+      },
+      "metadata": {
+        "note": "Deprecated - PSL decay example"
+      }
+    }
+  ],
+  "statistics": {
+    "totalBots": 15,
+    "avgPSL": 7.31,
+    "medianPSL": 7.6,
+    "stdDev": 1.32,
+    "highestPSL": { "bot": "React", "score": 9.7 },
+    "lowestPSL": { "bot": "Moment.js", "score": 4.5 }
+  }
+}

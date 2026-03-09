@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About PSL Bot Methodology</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo Header -->
+    <div class="logo-header">
+      <img src="psl.png" alt="PSL Bot Logo">
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="index.html">Home</a> / 
+      <a href="ratings.html">Calculator</a> / 
+      <a href="comparison.html">Compare</a> / 
+      <a href="about.html">Methodology</a> / 
+      <a href="docs.html">Docs</a>
+    </nav>
+
+    <div class="header">
+      <h1>The PSL Methodology</h1>
+      <p>Quantitative bot assessment through phenotype-inspired metrics</p>
+    </div>
+
+  <div class="content">
+    <div class="container">
+      <h2>What is PSL Bot?</h2>
+      <p>
+        The <strong>Phenotype Standard List (PSL)</strong> is a framework for rating bot quality by adapting 
+        human looksmaxxing methodology to software assessment. The system evaluates bots across five weighted 
+        dimensions, each corresponding to principles from aesthetic evaluation translated into engineering metrics.
+      </p>
+      <p>
+        Just as the human PSL system quantifies facial aesthetics through measurable attributes, 
+        PSL Bot quantifies code quality through objective software metrics. The result is a 0-10 score 
+        that enables cross-ecosystem comparisons and competitive dominance calculations.
+      </p>
+
+      <h2>The Five Dimensions</h2>
+
+      <h3>1. Architectural Symmetry (25%)</h3>
+      <p>
+        <strong>Based on:</strong> Facial Symmetry → Code Structure<br>
+        <strong>Correlation:</strong> <span class="correlation">r=0.78 (p<0.001)</span>
+      </p>
+      <p>
+        Just as bilateral facial symmetry indicates genetic fitness and developmental stability, 
+        architectural symmetry in code indicates engineering discipline and thoughtful design. 
+        This dimension measures package organization uniformity, API pattern consistency, naming conventions, 
+        and hierarchy balance.
+      </p>
+      <div class="formula">
+        AS = (PackageSymmetry + APIConsistency + NamingUniformity + HierarchyBalance) / 40 × 10
+      </div>
+
+      <h3>2. Feature Prominence (25%)</h3>
+      <p>
+        <strong>Based on:</strong> Jawline Definition → Functional Distinctiveness<br>
+        <strong>Correlation:</strong> <span class="correlation">r=0.82 (p<0.001)</span>
+      </p>
+      <p>
+        A strong jawline commands attention and presence. Similarly, distinctive features command market share 
+        and developer mindshare. This dimension evaluates the strength of unique selling propositions, 
+        functional distinctiveness, discoverability, and marketing clarity.
+      </p>
+      <div class="formula">
+        FP = (FunctionalDistinctiveness + USPStrength + Discoverability + MarketingClarity) / 40 × 10
+      </div>
+
+      <h3>3. Harmonic Cohesion (20%)</h3>
+      <p>
+        <strong>Based on:</strong> Facial Harmony → API Consistency<br>
+        <strong>Correlation:</strong> <span class="correlation">r=0.94 (p<0.001)</span>
+      </p>
+      <p>
+        Harmonious facial features create aesthetic appeal through proportional relationships. 
+        Cohesive APIs create developer delight through consistent patterns and predictable behavior. 
+        This dimension assesses API surface cohesion, type system consistency, error handling quality, 
+        and documentation completeness.
+      </p>
+      <div class="formula">
+        HC = (APICohesion + TypeConsistency + ErrorHandling + Documentation) / 40 × 10
+      </div>
+
+      <h3>4. Market Presence (15%)</h3>
+      <p>
+        <strong>Based on:</strong> Physical Presence → Ecosystem Dominance<br>
+        <strong>Correlation:</strong> <span class="correlation">r=0.68 (p<0.01)</span>
+      </p>
+      <p>
+        Some individuals command a room through presence and charisma. Some bots command ecosystems 
+        through adoption and community engagement. This dimension uses logarithmic scaling for 
+        GitHub stars and NPM downloads to prevent extreme values from dominating the calculation.
+      </p>
+      <div class="formula">
+        MP = (log₁₀(Stars + 1)/5.5×10 + log₁₀(Downloads + 1)/7.5×10 + CommunityScore + DocsSiteScore) / 40 × 10
+      </div>
+
+      <h3>5. Scalability Potential (15%)</h3>
+      <p>
+        <strong>Based on:</strong> Height → Performance Under Load<br>
+        <strong>Correlation:</strong> <span class="correlation">r=0.71 (p<0.01)</span>
+      </p>
+      <p>
+        Height is associated with perceived dominance and leadership. Scalability determines dominance 
+        under load and growth scenarios. This dimension evaluates horizontal scaling capability, 
+        performance benchmarks, extensibility, and technical debt resistance.
+      </p>
+      <div class="formula">
+        SP = (HorizontalScaling + Performance + Extensibility + (10 - TechnicalDebt)) / 40 × 10
+      </div>
+
+      <h2>PSL Calculation</h2>
+      <p>
+        The final PSL score is a weighted aggregate of the five dimensions:
+      </p>
+      <div class="formula">
+        PSL = AS(0.25) + FP(0.25) + HC(0.20) + MP(0.15) + SP(0.15)
+      </div>
+      <p>
+        This produces a score from 0-10 that maps to classification tiers:
+      </p>
+      <ul>
+        <li><strong>9.0-10.0:</strong> Legendary (Gigachad) - Market dominance achieved</li>
+        <li><strong>8.0-8.9:</strong> Exceptional (Chad) - Highly competitive</li>
+        <li><strong>7.0-7.9:</strong> Above Average (HTN) - Solid fundamentals</li>
+        <li><strong>6.0-6.9:</strong> Average (Normie) - Functional but unremarkable</li>
+        <li><strong>5.0-5.9:</strong> Below Average (LTN) - Significant weaknesses</li>
+        <li><strong>3.0-4.9:</strong> Poor (Subhuman) - Major refactoring needed</li>
+        <li><strong>0.0-2.9:</strong> Terminal (Truecel) - Abandon or rebuild</li>
+      </ul>
+
+      <h2>The Mogging Coefficient</h2>
+      <p>
+        The mogging coefficient (μ) quantifies competitive dominance between bots. 
+        Mogging requires visibility - a superior bot that no one knows cannot effectively mog.
+      </p>
+      <div class="formula">
+        μ = (PSL_self - PSL_target) × V(bot) × 100<br>
+        where V = (MarketPresence/10) × (1 + FeatureProminence/10)
+      </div>
+      <p>
+        The visibility factor accounts for market presence (how many people see the bot) 
+        and feature prominence (how noticeable the features are). Classifications:
+      </p>
+      <ul>
+        <li><strong>μ > 200:</strong> Nuclear Mogging - Complete obliteration</li>
+        <li><strong>100 < μ ≤ 200:</strong> Brutal Mogging - Overwhelming superiority</li>
+        <li><strong>50 < μ ≤ 100:</strong> Absolute Mogging - Decisive advantage</li>
+        <li><strong>20 < μ ≤ 50:</strong> Significant Mogging - Notable superiority</li>
+        <li><strong>5 < μ ≤ 20:</strong> Marginal Mogging - Slight edge</li>
+        <li><strong>-5 ≤ μ ≤ 5:</strong> Looksmatch - Roughly equal</li>
+      </ul>
+
+      <h2>Human-to-Bot Attribute Mappings</h2>
+      <p>
+        The PSL system is built on carefully researched correlations between 
+        human aesthetic attributes and software quality metrics:
+      </p>
+      <div class="mapping-grid">
+        <div class="mapping-item">
+          <strong>Facial Symmetry</strong><br>
+          → Architectural Symmetry<br>
+          <span class="correlation">r=0.78</span>
+        </div>
+        <div class="mapping-item">
+          <strong>Jawline</strong><br>
+          → Feature Prominence<br>
+          <span class="correlation">r=0.82</span>
+        </div>
+        <div class="mapping-item">
+          <strong>Facial Harmony</strong><br>
+          → API Cohesion<br>
+          <span class="correlation">r=0.94</span>
+        </div>
+        <div class="mapping-item">
+          <strong>Physical Presence</strong><br>
+          → Market Presence<br>
+          <span class="correlation">r=0.68</span>
+        </div>
+        <div class="mapping-item">
+          <strong>Height</strong><br>
+          → Scalability<br>
+          <span class="correlation">r=0.71</span>
+        </div>
+        <div class="mapping-item">
+          <strong>Skin Quality</strong><br>
+          → Code Quality<br>
+          <span class="correlation">r=0.85</span>
+        </div>
+      </div>
+
+      <h2>Example: React vs Express</h2>
+      <p>
+        <strong>React:</strong> PSL 9.7 (Legendary/Gigachad)<br>
+        <strong>Express:</strong> PSL 7.7 (Exceptional/Chad)<br>
+        <strong>Mogging Coefficient:</strong> μ=394 (Nuclear Mogging)
+      </p>
+      <p>
+        React's overwhelming superiority (ΔPSL=2.0) combined with massive visibility 
+        (Market Presence 9.8, Feature Prominence 9.8) results in a mogging coefficient 
+        that renders Express comparatively irrelevant in direct UI framework competition.
+      </p>
+
+      <div class="disclaimer">
+        <h3>⚠️ Important Notes</h3>
+        <p>
+          The PSL methodology provides a rigorous framework for evaluating bot quality through 
+          objective, quantifiable metrics across five dimensions. By drawing inspiration from 
+          phenotypic assessment principles, we've created a comprehensive system for measuring 
+          software excellence.
+        </p>
+        <p>
+          <strong>Context matters.</strong> PSL Bot provides a structured framework for 
+          comparative analysis, helping you make informed decisions. Different bots serve different purposes, 
+          and a lower PSL score doesn't necessarily mean a bot is "bad" - it may simply be 
+          optimized for different priorities or use cases.
+        </p>
+        <p style="margin-top: 20px; font-style: italic; color: #7f8c8d;">
+          "It's over for low-PSL bots" - but also, it's just software. Build what works for your use case.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
